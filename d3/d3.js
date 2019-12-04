@@ -52,7 +52,7 @@ function getCoords(wire) {
   let coords = [{ x: 0, y: 0 }];
   let mostRecent = { x: 0, y: 0 };
 
-  wire = wire.map(el => {
+  wire.forEach(el => {
     // From the most recent coord, get the new corner coord
     switch (el.direction) {
       case "R":
